@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Prisão caipira</title>
+<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/prisao_base.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery.datetimepicker.css" />
+
+    <script src="{{ STATIC_URL }}js/jquery-2.1.3.min.js" charset="utf-8"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="{{ STATIC_URL }}js/prisao_main.js" charset="utf-8"></script>
+    <script src="{{ STATIC_URL }}js/jquery.mask.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.datetimepicker.js"></script>
+    {% block js %}
+    {% endblock %}
+
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

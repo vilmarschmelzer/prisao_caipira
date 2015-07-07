@@ -1,0 +1,10 @@
+{% for preso in presos %}
+    <tr>
+        <td>
+            {{ preso.prisioneiro_id }}
+        </td>
+        <td>
+            {{ preso.data | date:'H:i:s'}}
+        </td>
+    </tr>
+{% endfor %}

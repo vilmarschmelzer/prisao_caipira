@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-md-2">
+            <h3><b>Livres</b></h3>
+            <div class="well" id="presos_livres">
+                {% include 'presos_livres.html' with presos_livres=presos_livres %}
+
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h3><b>Prender</b></h3>
+            <div id="alerta" class="alert alert-danger"></div>
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="form_prender" action="#" method="post" class="form-inline">
+                             {% csrf_token %}
+                            <div class="input-group">
+                                <input name="prender" type="number" class="form-control">
+                                <span class="input-group-btn">
+                                    <input class="btn btn-default" type="submit" id="btn_prender" value="Prender"/>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="form_soltar" method="post" action="#" class="form-inline pull-right">
+                             {% csrf_token %}
+                            <div class="input-group">
+                                <input name="soltar" type="number" class="form-control">
+                                <span class="input-group-btn">
+                                    <input class="btn btn-default" type="submit" id="btn_soltar" value="Soltar"/>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <h4><b>Presos</b></h4>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <th>Prisioneiro</th>
+                            <th>Soltar</th>
+                        </thead>
+                        <tbody id="tb_presos">
+                            {% include 'tb_presos.html' with presos=presos %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <h3><b>Soltar</b></h3>
+            <div class="well" id="soltar_presos">
+                {% include 'presos_soltar.html' with soltar=soltar %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

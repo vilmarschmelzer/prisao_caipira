@@ -1,0 +1,151 @@
+
+/*
+    Arquivo CSS base
+*/
+
+/*.popover{
+    width:700px;
+    height:550px;
+}*/
+
+/*
+.modal .modal-body {
+    max-height: 83%;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+
+      height: 85%;
+      padding: 0;
+      margin: 10px;
+}
+.modal-content {
+      height: 100%;
+      overflow:auto;
+}
+*/
+
+.popover {
+max-width: 800px;
+width: auto;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+  text-decoration: none;
+  background-color: #FFFFFF;
+  border: 2px solid #555;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFFFFF;
+}
+.panel-warning > .panel-heading {
+    color: #DF3A01;
+    background-color: #FACC2E;
+}
+
+a:hover{
+    color:gray;
+    text-decoration: none;
+}
+
+.navbar-fixed-bottom{
+    color: aliceblue;
+}
+
+.help-block{
+  margin-top: 1px;
+  margin-bottom: 0px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    padding-top: 0px;
+}
+
+.list-group-item{
+  padding: 3px;
+  margin-bottom: 7px;
+  
+}
+
+.form-group{
+  margin-bottom: 5px;
+}
+
+.field-danger, .msg-error{
+	float:left;
+}
+
+body{
+	line-height: 27px;
+    background-color: #F5F5F5;
+}
+
+label{
+  font-weight: normal;
+}
+.alert{
+	margin-bottom: 0px;
+  padding: 2px;
+}
+
+.form-control{
+  height: 34px;
+}
+
+.deletelink{
+	font-weight: bold;
+	color:#ff0000;
+}
+
+p.help{
+	color:#3a87ad;
+}
+
+.tooltip-inner {
+  margin-left: 27px;
+}
+
+.tooltip-arrow{
+  margin-left: 25px;
+}
+
+.tooltip-animal{
+  position: absolute;
+  margin: 185px 883px;
+  line-height: 1.4;
+  width: 200px;
+}
+
+.tooltip-animal-arrow{
+  margin: 204px 881px;
+}
+/*.btn{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}*/
+
+.list-group{
+  margin-top: 5px;
+}
+
+#video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
